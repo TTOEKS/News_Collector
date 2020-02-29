@@ -12,7 +12,8 @@ Collecting information is down below
 Headline, Context, URL.
 
 ### 2. Display News  
-it display each news data under the topic using vertical recyclerview
+it display each news data under the topic using vertical recyclerview    
+if user want more specific information of news, tab the news item. then will be connect news page autometically
 
 
 ### 3. Favorite Topic  
