@@ -24,6 +24,6 @@ so these favorite topics always display higher than unfavorite topics.
 if user set unfavorite topic at Preference, this topic is no longer display
 
 ### 4. Push Alarm  
-First user should set admit push alarm at Preference, and user should set time they wanna get push alarm. 
+First user should set admit push alarm at Preference, and user should set time they wanna get push alarm.   
 (I recommand time that you can read news comfortable on couch)  
 this function might be remind you reading a news 
