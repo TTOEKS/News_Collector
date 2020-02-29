@@ -8,7 +8,7 @@ here is functions I made
 ### 1. News Collect.
 it collect 10 news data each topic using web Crawling,  
 
-Collecting information is down below 
+Collecting information is down below  
 Headline, Context, URL.
 
 ### 2. Display News  
