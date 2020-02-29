@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setTime">
+        <item>24 시간</item>
+        <item>12 시간</item>
+        <item>6 시간</item>
+        <item>3 시간</item>
+    </string-array>
+    <string-array name="setTime_values">
+        <item>24</item>
+        <item>12</item>
+        <item>6</item>
+        <item>3</item>
+    </string-array>
+</resources>

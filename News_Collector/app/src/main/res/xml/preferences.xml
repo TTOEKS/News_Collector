@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    설정창에 들어가야 하는 것들
+    푸시 알람 허용
+    관심 없는 이슈
+
+    푸시
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Settings">
+        <SwitchPreference
+            android:title="푸시 알람 사용"
+            android:summaryOn="푸시 알람을 사용합니다."
+            android:summaryOff="푸시 알람을 사용하지 않습니다."
+            android:key="key_push_alarm"
+            android:defaultValue="true"
+            />
+        <Preference
+            android:title="알람 시간 설정"
+            android:summary="푸시 알람 시간을 설정합니다."
+            android:key="key_push_time"
+            android:dependency="key_push_alarm"
+            >
+            <intent
+                android:action="android.intent.action.SENDTO"
+                android:data=""
+                android:targetClass="com.example.news_collector.TimesettingActivity"
+                android:targetPackage="com.example.news_collector"
+                >
+            </intent>
+        </Preference>
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="key_push_alarm"
+            android:title="알람 소리"
+            android:showSilent="true"
+            android:ringtoneType="alarm"
+            android:key="key_alarm_sound">
+
+        </RingtonePreference>
+        <CheckBoxPreference
+            android:title="저녁 알람 허용"
+            android:summary="22시 이후 알람 허용"
+            android:defaultValue="false"
+            android:key="key_night_alarm"
+            android:dependency="key_push_alarm"
+        >
+
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="관심 없는 주제"
+        android:summary="체크된 주제는 더이상 표시되지 않습니다."
+        android:defaultValue="false"
+        android:iconSpaceReserved="false"
+        >
+        <CheckBoxPreference
+            android:id="@+id/checkbox_politics"
+            android:key="key_politics"
+            android:title="정치"
+
+            />
+        <CheckBoxPreference
+            android:id="@+id/checkbox_economy"
+            android:key="key_economy"
+            android:title="경제"
+
+            />
+        <CheckBoxPreference
+            android:id="@+id/checkbox_IT"
+            android:key="key_IT"
+            android:title="IT"
+
+            />
+        <CheckBoxPreference
+            android:id="@+id/checkbox_security"
+            android:key="key_security"
+            android:title="보안"
+
+            />
+        <CheckBoxPreference
+            android:id="@+id/checkbox_science"
+            android:key="key_science"
+            android:title="기술/과학"
+
+            />
+        <CheckBoxPreference
+            android:id="@+id/checkbox_global"
+            android:key="key_global"
+            android:title="세계"
+
+            />
+
+
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

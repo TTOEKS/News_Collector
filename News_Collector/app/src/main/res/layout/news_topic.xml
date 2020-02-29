@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingBottom="45dp"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        >
+        <TextView
+            android:id="@+id/textview_Topic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TOPIC"
+            android:textSize = "25dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            />
+        <ImageView
+            android:id="@+id/imageview_favorite"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/empty_star"
+            />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_news_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>

@@ -1,0 +1,21 @@
+/* TODO
+        1. Coding Preferences Activity
+            ㄱ. 설정한 값 보이게      ->  Done!
+            ㄴ. 시간 설정            ->  Done!
+            ㄷ. 푸시 알람            ->  Done!
+            ㄹ. 마무리 코딩          ->  Done!
+        2. Setting Alram Time       -> Done!
+
+
+        FIXME
+            1. Doesn't display all Data RecyclerView Item at real Device                -> FIX!
+            2. Check PUSH Alarm
+            3. Check application run correctly at real Device when Fixing FIX No.1      -> FIX!
+            4. Javax.net.ssl.SSLHandshakeException: Handshake failed
+                -> deny if access page might need certification
+            5. Bug that push alarm is correctly working in virtual device  but real device is not working
+                   Solution) Notification Builder -> NotificationComapat.Builder        -> FIX!
+            6. Bug that suddenly occur so many push alarm in main page  -> FIX!
+                   Solution) prior time setting was stack up with not delete -> am.cancle() -> FIX?
+
+*/
