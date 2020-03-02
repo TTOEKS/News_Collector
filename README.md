@@ -27,3 +27,9 @@ if user set unfavorite topic at Preference, this topic is no longer display
 First user should set admit push alarm at Preference, and user should set time they wanna get push alarm.   
 (I recommand time that you can read news comfortable on couch)  
 this function might be remind you reading a news 
+
+ ***Update Function list***
+ 1. when user tab push alarm open application 
+ 2. stabilize push Alarm
+ 3. UI update
+ 4. change Init Activity and UI
