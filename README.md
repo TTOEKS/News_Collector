@@ -28,7 +28,7 @@ First user should set admit push alarm at Preference, and user should set time t
 (I recommand time that you can read news comfortable on couch)  
 this function might be remind you reading a news 
 
- ***Update Function list***
+ ***TO DO list***
  1. when user tab push alarm open application 
  2. stabilize push Alarm
  3. UI update
