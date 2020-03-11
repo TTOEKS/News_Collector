@@ -29,7 +29,7 @@ First user should set admit push alarm at Preference, and user should set time t
 this function might be remind you reading a news 
 
  ***TO DO list***
- 1. when user tab push alarm open application 
- 2. stabilize push Alarm
- 3. UI update
- 4. change Init Activity and UI
+ -[ ]when user tab push alarm open application 
+ -[ ]stabilize push Alarm
+ -[ ] UI update
+ -[ ]change Init Activity and UI
