@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -66,7 +70,17 @@ public class loadingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loading);
+        setContentView(R.layout.activity_init);
+
+        // Fade in Animation
+        Animation fadeInAnimation = AnimationUtils.loadAnimation(this,  R.anim.fade_in);
+        LinearLayout init_layout = (LinearLayout) findViewById(R.id.Linearlayout_Init);
+
+        Animation fade_in = new AlphaAnimation(1, 0);
+        fade_in.setDuration(1000);
+        fade_in.setStartOffset(1000);
+
+        init_layout.startAnimation(fadeInAnimation);
 
         // Ignore SSL Certification Conntecting
         try {
@@ -104,10 +118,6 @@ public class loadingActivity extends AppCompatActivity {
         crawlingTask CrawTask = new crawlingTask();
         CrawTask.execute();
 
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-
-        user_name = bundle.getString("name");
 
         /*
         while(jsonArray.isNull(3)) {
@@ -128,10 +138,7 @@ public class loadingActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            // Display "Loading.gif"
-            ImageView imageView_loading = (ImageView)findViewById(R.id.imageview_loading);
-            GlideDrawableImageViewTarget gifImage = new GlideDrawableImageViewTarget(imageView_loading);
-            Glide.with(loadingActivity.this).load(R.drawable.loading).into(gifImage);
+
         }
         @Override
         protected Void doInBackground(Void... voids) {
@@ -158,7 +165,6 @@ public class loadingActivity extends AppCompatActivity {
             Intent intent_send = new Intent(loadingActivity.this, MainActivity.class);
 
             // every news data hand to MainActivity
-            intent_send.putExtra("name", user_name);
             intent_send.putExtra("jsonArray_Politics", jsonArray_Politics.toString());
             intent_send.putExtra("jsonArray_Economy", jsonArray_Economy.toString());
             intent_send.putExtra("jsonArray_IT", jsonArray_IT.toString());
@@ -167,7 +173,8 @@ public class loadingActivity extends AppCompatActivity {
             intent_send.putExtra("jsonArray_Global", jsonArray_Global.toString());
 
             startActivity(intent_send);
-            Toast.makeText(getApplicationContext(), "환영합니다. "+user_name+"님", Toast.LENGTH_SHORT).show();
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            Toast.makeText(getApplicationContext(), "환영합니다.", Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -6,53 +6,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp"
+    android:background="#00a3d6"
     >
-
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:text="NEWS COLLECTOR"
-        android:textSize="40dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:layout_marginTop="250dp"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/Linearlayout_Init"
+        >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:text="For your smart life"
-        android:layout_gravity="center"
-        android:gravity="center"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Collector"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="300dp"
+            android:layout_alignBottom="@+id/relativelayout_id"
 
-    <Button
-        android:id="@+id/button_initLogin"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="50dp"
-        android:text="Login"
-        />
 
-    <Button
-        android:id="@+id/button_initSignup"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:text="sign up"
-        />
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For your smart life!!"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/button_test"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:text="test"
-        />
+
 
 
 </LinearLayout>

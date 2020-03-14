@@ -91,9 +91,7 @@ public class TimesettingActivity extends AppCompatActivity {
                 timeData.setMinute(minute);
                 mDatalist.add(timeData);
 
-
                 adapterTimeSetting.notifyDataSetChanged();
-
 
             }
         });
@@ -111,6 +109,7 @@ public class TimesettingActivity extends AppCompatActivity {
         Set<String> set = new HashSet<String>();
         SharedPreferences.Editor editor = shared.edit();
 
+        // Save sharedPreferences and reservation
         for(int i=0; i<mDatalist.size(); i++){
             time = mDatalist.get(i).getHour() + "_" + mDatalist.get(i).getMinute();
             set.add(time);

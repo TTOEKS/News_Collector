@@ -14,8 +14,8 @@
             4. Javax.net.ssl.SSLHandshakeException: Handshake failed
                 -> deny if access page might need certification
             5. Bug that push alarm is correctly working in virtual device  but real device is not working
-                   Solution) Notification Builder -> NotificationComapat.Builder        -> FIX!
-            6. Bug that suddenly occur so many push alarm in main page  -> FIX!
-                   Solution) prior time setting was stack up with not delete -> am.cancle() -> FIX?
+                     Solution) Notification Builder -> NotificationComapat.Builder        -> FIX!
+              6. Bug that suddenly occur so many push alarm in main page  -> FIX!
+                     Solution) prior time setting was stack up with not delete -> am.cancle() -> FIX?
 
-*/
+  */

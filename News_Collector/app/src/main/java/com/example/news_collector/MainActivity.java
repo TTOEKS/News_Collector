@@ -36,9 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Adapter_news_topic                  topicAdapter;
 
     final static String TAG = "MainActivity";
-    String user_name;
     ImageView imageview_setting;
-    TextView textview_user_name;
     Boolean f_politics, f_economy, f_IT, f_security, f_science, f_global;
     RecyclerView recyclerview_news_topic, recyclerview_news_data;
     JSONArray jsonArray_Politics = new JSONArray();
@@ -199,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
         // 알람 주기 calendar에 설정
         // reservation Alarm
         am.set(AlarmManager.RTC_WAKEUP, sdl, sender);
-        am.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 24*60*60*1000, sender);
+        am.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis()+AlarmManager.INTERVAL_DAY, AlarmManager.INTERVAL_DAY, sender);
     }
 
     @Override
@@ -209,11 +207,12 @@ public class MainActivity extends AppCompatActivity {
         // Load user set time in Preference
         SharedPreferences time_shared = getSharedPreferences("time_setting", MODE_PRIVATE);
         pre_time_set = time_shared.getStringSet("time_set", null);
-        Log.i("pre_time_set", pre_time_set.toString());
 
 
-        // Push Time setting
-        if(!(pre_time_set.isEmpty())) {
+        // Push Time setting if pre_time_set is not null
+        if(!(pre_time_set == null)) {
+            Log.i("pre_time_set", pre_time_set.toString());
+
             if(sender != null && am != null) {
                 Log.i(TAG, "Sender is not null!!");
                 am.cancel(sender);

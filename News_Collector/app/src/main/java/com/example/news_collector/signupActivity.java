@@ -59,7 +59,7 @@ public class signupActivity extends AppCompatActivity {
                 password            = editText_password.getText().toString();
                 password_confirm    = editText_password_again.getText().toString();
                 email               = editText_email.getText().toString();
-                Intent intent = new Intent(signupActivity.this, initActivity.class);
+//                Intent intent = new Intent(signupActivity.this, initActivity.class);
 
                 if (name.isEmpty() |id.isEmpty() | password.isEmpty() | password_confirm.isEmpty() | email.isEmpty()) {
                     Toast.makeText(signupActivity.this, "빈칸이 없도록 모두 작성해주세요", Toast.LENGTH_SHORT).show();
@@ -103,7 +103,7 @@ public class signupActivity extends AppCompatActivity {
 
 
                         // Back to init Activity
-                        startActivity(intent);
+//                        startActivity(intent);
                     }
                 }
 
