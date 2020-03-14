@@ -29,10 +29,11 @@ First user should set admit push alarm at Preference, and user should set time t
 this function might be remind you reading a news 
 
  ***TO DO list***
+ - [x] change Init Activity and UI
  - [ ] when user tab push alarm context, open application automatically 
  - [ ] stabilize push Alarm    
  - [ ] UI update  
- - [x] change Init Activity and UI
+
  
  
  
