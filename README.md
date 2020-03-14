@@ -32,4 +32,14 @@ this function might be remind you reading a news
  - [ ] when user tab push alarm context, open application automatically 
  - [ ] stabilize push Alarm    
  - [ ] UI update  
- - [ ] change Init Activity and UI  
+ - [x] change Init Activity and UI
+ 
+ 
+ 
+ ### Update on 2020.03.14
+ 1. Update Init Activity and UI
+ 2. Remove original init activity, Loading Activity
+ 3. Remove Loading Animation
+ 4. Add fade in/out animation when execute application 
+ 5. Modify push alram reservation bug (will be test)
+ 
