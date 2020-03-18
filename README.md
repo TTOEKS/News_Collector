@@ -38,9 +38,9 @@ this function might be remind you reading a news
  
  
  ### Update on 2020.03.14
- 1. Update Init Activity and UI
- 2. Remove original init activity, Loading Activity
- 3. Remove Loading Animation
- 4. Add fade in/out animation when execute application     
+   1. Update Init Activity and UI
+   2. Remove original init activity, Loading Activity
+   3. Remove Loading Animation
+   4. Add fade in/out animation when execute application     
  ~~5. Modify push alram reservation bug (will be test)~~    <- this bug is still occur (2020.03.18)
  
