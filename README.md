@@ -42,5 +42,5 @@ this function might be remind you reading a news
  2. Remove original init activity, Loading Activity
  3. Remove Loading Animation
  4. Add fade in/out animation when execute application 
- 5. Modify push alram reservation bug (will be test)
+ ~~5. Modify push alram reservation bug (will be test)~~    <- this bug is still occur
  
