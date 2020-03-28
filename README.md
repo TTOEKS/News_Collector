@@ -30,7 +30,7 @@ this function might be remind you reading a news
 
  ***TO DO list***
  - [x] change Init Activity and UI
- - [] when user tab push alarm context, open application automatically 
+ - [x] when user tab push alarm context, open application automatically 
  - [ ] stabilize push Alarm    
  - [ ] UI update  
 
